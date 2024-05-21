@@ -1,6 +1,7 @@
 const express = require('express');
 const compression = require("compression");
 const cors = require('cors');
+
 const {indexRouter} = require("./src/router/indexRouter");
 const { userRouter } = require("./src/router/userRouter");
 
@@ -9,6 +10,7 @@ const port = 3000;
 
 
 // express 미들웨어 설정 
+app.use(express.static("front"));
 
 // cors 설정
 app.use(cors());
