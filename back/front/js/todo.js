@@ -3,10 +3,12 @@ readTodo();
 async function readTodo(){
 
     console.log("readTodo실행");
+   
+
 
     const token = localStorage.getItem("x-access-token");
     if(!token) {
-        return
+        return;
     }
     const config = {
         method: "get",

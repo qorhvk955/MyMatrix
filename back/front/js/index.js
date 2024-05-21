@@ -1,8 +1,7 @@
 setHeader();
 
 async function setHeader(){
-    //로컬스토리지 토근 조냊 여부 검사
-
+    
     const token = localStorage.getItem("x-access-token");
 
     if(!token) {
